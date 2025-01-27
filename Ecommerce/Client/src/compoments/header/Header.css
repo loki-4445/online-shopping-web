@@ -1,0 +1,7 @@
+.head{
+    background-color: var( --light-color);
+    justify-content: space-around;                                                     
+}
+.title {
+    box-shadow: 2px 3px 1px rgb(169, 169, 169);
+}

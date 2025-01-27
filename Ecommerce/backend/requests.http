@@ -1,0 +1,64 @@
+post http://localhost:3500/user-api/user
+Content-Type: application/json
+
+{
+    "fullname":"GandhamLokesh",
+   "username":"Lokesh",
+    "password":"Lokesh",
+    "Email":"loll@gmail.com",
+    "products":[]
+
+    
+}
+
+###
+post http://localhost:3500/user-api/login
+Content-Type: application/json
+
+{
+    "pname":"john",
+    "password":"john"
+}
+
+###
+get http://localhost:3500/user-api/product
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbmFtZSI6ImpvaG4iLCJpYXQiOjE3MjE5NzA2MzIsImV4cCI6MTcyMjU3NTQzMn0.EbCyQNiuFZ2d2AHmpi4kSAdc8eOMqHtJliIxmuPsaO8
+### getting the userss data
+get http://localhost:3500/user-api/user
+
+###to update the data
+put http://localhost:3500/user-api/product
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbmFtZSI6Im9pbCIsImlhdCI6MTcyMTEwNDAwMSwiZXhwIjoxNzIxNzA4ODAxfQ.9pBo5h4oUB2mRoQw6OzMM_R6-S08DdD5KM9stGOFUzs
+
+{
+    "id":4,
+    "pname":"gas",
+    "password":"gas",
+    "price":100
+}
+
+###
+delete http://localhost:3500/user-api/product/4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbmFtZSI6Im9pbCIsImlhdCI6MTcyMTEwMzU3OSwiZXhwIjoxNzIxNzA4Mzc5fQ.WZUGTmvwsdgpRdY5IXZZO1uOg28ZncvULzcLmES2wFQ
+
+###
+get http://localhost:3500/product-api/products
+
+
+###
+get http://localhost:3500/product-api/products/1
+
+###
+PUT http://localhost:3500/user-api/add-to-cart/Lokesh
+Content-Type: application/json
+
+{
+    "product": {
+        "id": 1,
+        "title": "Essence Mascara Lash Princess",
+        "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+        "category": "beauty",
+        "price": 9.99
+    }
+}
