@@ -48,6 +48,9 @@ An eCommerce platform built with React (frontend) and Node.js/Express (backend),
 This project is licensed under the MIT License.
 
 ## Screenshot
+The Home page:
 ![Project Output](./ecommerce-home.png)
+The Products page:
 ![Project Output](./ecommerce-products.png)
+The Cart page:
 ![Project Output](./ecommerce-cart.png)
